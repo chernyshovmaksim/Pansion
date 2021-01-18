@@ -88,9 +88,20 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
         new HtmlWebpackPlugin({
-            title: 'Пансионат Марсово Поле',
             template: path.resolve(__dirname, './src/index.html'),
             filename: 'index.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/inner.html'),
+            filename: 'inner.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/personal.html'),
+            filename: 'personal.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/categories.html'),
+            filename: 'categories.html'
         }),
         new CopyPlugin({
             patterns: [

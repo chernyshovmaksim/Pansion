@@ -7,7 +7,7 @@ const menu = new MmenuLight(
 );
 
 const navigator = menu.navigation({
-    title: 'Счастливое Долголетие'
+    title: 'Пансионат «Марсово поле»'
 });
 
 const drawer = menu.offcanvas({
