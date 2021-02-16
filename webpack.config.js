@@ -67,7 +67,8 @@ module.exports = {
                     }
                 ],
             },
-            // Css
+
+            //Css
             {
                 test: /\.(css)$/,
                 use: [
@@ -82,6 +83,28 @@ module.exports = {
                     },
                 ],
             },
+            //Fonts
+            {
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'fonts/'
+                        }
+                    }
+                ]
+            },
+            // // Images
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                    },
+                ],
+            }
 
         ]
     },

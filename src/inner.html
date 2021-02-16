@@ -7,7 +7,7 @@
 	<title>
 		Пансионат - Внутреняя страница
 	</title>
-	<link rel="shortcut icon" href="./img/shuttle.png" type="image/png">
+	<link rel="shortcut icon" href="./img/logo.PNG" type="image/png">
 </head>
 
 <body class="body antialiased flex flex-col min-h-screen">
@@ -62,7 +62,8 @@
 	<section class="breadcrumbs">
 		<div class="container mx-auto px-4 mt-8">
 			<ul class="flex flex-wrap justify-start p-2 rounded shadow bg-gradient-to-tr from-green-600 to-green-700">
-				<li class="text-white text-xs mr-4"><a href="#">Новости</a> <i class="fas fa-long-arrow-alt-right"></i>
+				<li class="text-white text-xs mr-4"><a href="#">Новости</a> &nbsp;&nbsp;<i
+						class="fas fa-long-arrow-alt-right"></i>
 				</li>
 				<li class="text-gray-200 text-xs mr-4"><a href="#">Пора вставать на лыжи!</a></li>
 			</ul>
@@ -78,7 +79,7 @@
 				<div class="news__poster mb-8 flex justify-center">
 					<img src="./img/news-title-1.jpg" class="md:w-full md:py-14">
 				</div>
-				<div class="news__body text-xl md:text-2xl text-gray-700 leading-9 font-serif font-light">
+				<div class="news__body text-xl md:text-2xl text-gray-500 leading-9 font-serif font-light">
 					<p>
 						В пансионате «Марсово поле» одним из полезных зимних видов активного
 						отдыха являются лыжные прогулки. Этот вид физической активности подходит
@@ -97,25 +98,36 @@
 						года! Ждём Вас! Вместе обязательно покатаемся на лыжах!
 					</p>
 				</div>
-				<div class="news__images flex justify-center md:justify-start flex-wrap mt-8 md:py-14">
-					<a href="./img/gallery-1.jpg" data-fancybox="images">
-						<img class="m-1 h-32 w-32 md:w-44 md:h-44" src="./img/gallery-1.jpg" alt="">
-					</a>
-					<a href="./img/gallery-2.jpg" data-fancybox="images">
-						<img class="m-1 h-32 w-32 md:w-44 md:h-44" src="./img/gallery-2.jpg" alt="">
-					</a>
-					<a href="./img/gallery-1.jpg" data-fancybox="images">
-						<img class="m-1 h-32 w-32 md:w-44 md:h-44" src="./img/gallery-1.jpg" alt="">
-					</a>
-					<a href="./img/gallery-2.jpg" data-fancybox="images">
-						<img class="m-1 h-32 w-32 md:w-44 md:h-44" src="./img/gallery-2.jpg" alt="">
-					</a>
-					<a href="./img/gallery-1.jpg" data-fancybox="images">
-						<img class="m-1 h-32 w-32 md:w-44 md:h-44" src="./img/gallery-1.jpg" alt="">
-					</a>
-					<a href="./img/gallery-2.jpg" data-fancybox="images">
-						<img class="m-1 h-32 w-32 md:w-44 md:h-44" src="./img/gallery-2.jpg" alt="">
-					</a>
+				<div class="gallery">
+					<div class="gallery__for">
+						<a href="./img/gallery-1.jpg" data-fancybox="images">
+							<img class="gallery__item h-80 w-full" src="./img/gallery-1.jpg" alt="">
+						</a>
+						<a href="./img/gallery-2.jpg" data-fancybox="images">
+							<img class="gallery__item h-80 w-full" src="./img/gallery-2.jpg" alt="">
+						</a>
+						<a href="./img/gallery-1.jpg" data-fancybox="images">
+							<img class="gallery__item h-80 w-full" src="./img/gallery-1.jpg" alt="">
+						</a>
+						<a href="./img/gallery-2.jpg" data-fancybox="images">
+							<img class="gallery__item h-80 w-full" src="./img/gallery-2.jpg" alt="">
+						</a>
+						<a href="./img/gallery-1.jpg" data-fancybox="images">
+							<img class="gallery__item h-80 w-full" src="./img/gallery-1.jpg" alt="">
+						</a>
+						<a href="./img/gallery-2.jpg" data-fancybox="images">
+							<img class="gallery__item h-80 w-full" src="./img/gallery-2.jpg" alt="">
+						</a>
+					</div>
+					<div class="gallery__nav">
+						<img class="gallery__item h-20" src="./img/gallery-1.jpg" alt="">
+						<img class="gallery__item h-20" src="./img/gallery-2.jpg" alt="">
+						<img class="gallery__item h-20" src="./img/gallery-1.jpg" alt="">
+						<img class="gallery__item h-20" src="./img/gallery-2.jpg" alt="">
+						<img class="gallery__item h-20" src="./img/gallery-1.jpg" alt="">
+						<img class="gallery__item h-20" src="./img/gallery-2.jpg" alt="">
+					</div>
+
 				</div>
 			</div>
 
@@ -142,8 +154,8 @@
 
 	<footer class="footer bg-green-600 text-white mt-auto">
 		<div class="container mx-auto px-4 py-4">
-			<p class="text-sm text-center">
-				Адрес: 460001, Г. ОРЕНБУРГ, УЛ. КРАСНАЯ ПЛОЩАДЬ, Д. 3/8
+			<p class="text-xs text-center">
+				Адрес: 460001, Г. Оренбург, Ул. Красная Площаль, Д. 3/8
 			</p>
 		</div>
 	</footer>
